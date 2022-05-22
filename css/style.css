@@ -142,7 +142,10 @@ body {
 
 /* hero */
 .hero__wrapper {
- padding: 100px 80px;
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ padding: 100px 80px 30px;
  background-image: url('../img/hero-bg-1-photo-of-balconies.jpg');
  background-repeat: no-repeat;
  background-size: cover;
@@ -170,7 +173,25 @@ body {
 }
 
 .hero__button {
+  margin-bottom: 55px;
   padding: 18.571px 37.1419px;
   font-size: 23.4581px;
   line-height: 29px;
+}
+
+.swiper{
+  align-self: center;
+}
+
+.swiper__button:not(:last-child) {
+  margin-right: 20px;
+}
+
+.swiper__circle {
+  fill: var(--white);
+  fill-opacity: 0.4;
+}
+
+.swiper__circle_white {
+  fill-opacity: 1;
 }
