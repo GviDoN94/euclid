@@ -1,6 +1,9 @@
 :root {
   --white: #FFFFFF;
   --black: #333333;
+  --orange: #FF9900;
+  --light-orange: rgba(255, 153, 0, 0.7);
+  --dark-orange: #E1670E;
 }
 
 html {
@@ -23,9 +26,9 @@ html {
     font-display: swap;
 }
 
-@font-face {
+ @font-face {
   font-family: 'Montserrat';
-  src: local('Montserrat-Medium')
+  src: local('Montserrat-Medium'),
     url(../fonts/MontserratMedium.woff2) format('woff2'),
     url(../fonts/MontserratMedium.woff) format('woff');
     font-weight: 500;
@@ -35,19 +38,19 @@ html {
 
 @font-face {
   font-family: 'Montserrat';
-  src: local('Montserrat-Bold')
-    url(../fonts/MontserratBold.woff2) format('woff2'),
-    url(../fonts/MontserratBold.woff) format('woff');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
+  src: local('Montserrat-SemiBold'),
+  url(../fonts/MontserratSemiBold.woff2) format('woff2'),
+  url(../fonts/MontserratSemiBold.woff) format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Montserrat';
-  src: local('Montserrat-SemiBold')
-    url(../fonts/MontserratSemiBold.woff2) format('woff2'),
-    url(../fonts/MontserratSemiBold.woff) format('woff');
+  src: local('Montserrat-Bold'),
+    url(../fonts/MontserratBold.woff2) format('woff2'),
+    url(../fonts/MontserratBold.woff) format('woff');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -55,7 +58,7 @@ html {
 
 @font-face {
   font-family: 'Montserrat';
-  src: local('Montserrat-ExtraBold')
+  src: local('Montserrat-ExtraBold'),
     url(../fonts/MontserratExtraBold.woff2) format('woff2'),
     url(../fonts/MontserratExtraBold.woff) format('woff');
     font-weight: 800;
@@ -85,16 +88,32 @@ body {
 }
 
 .container {
-  max-width: 1800px;
+  max-width: 1770px;
   margin: 0 auto;
-  padding: 0 15px;
+}
+
+.section {
+  margin-bottom: 100px;
+}
+
+.btn {
+  padding: 19px 38px;
+  background-color: var(--orange);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--white);
 }
 
 /* header */
-.header__container {
+.header {
+  padding: 14px 0px;
+  box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+}
+
+.header__wrapper {
   display: flex;
   align-items: center;
-  padding: 14px 15px;
 }
 
 .header__logo-link {
@@ -119,4 +138,39 @@ body {
   line-height: 22px;
   text-decoration: none;
   color: var(--black);
+}
+
+/* hero */
+.hero__wrapper {
+ padding: 100px 80px;
+ background-image: url('../img/hero-bg-1-photo-of-balconies.jpg');
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+}
+
+.hero__title {
+  max-width: 837px;
+  margin: 0;
+  margin-bottom: 24px;
+  font-weight: 800;
+  font-size: 70px;
+  line-height: 85px;
+  color: var(--white);
+}
+
+.hero__descr {
+  max-width: 790px;
+  margin: 0;
+  margin-bottom: 90px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: var(--white);
+}
+
+.hero__button {
+  padding: 18.571px 37.1419px;
+  font-size: 23.4581px;
+  line-height: 29px;
 }
