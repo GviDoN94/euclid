@@ -4,6 +4,7 @@
   --orange: #FF9900;
   --light-orange: rgba(255, 153, 0, 0.7);
   --dark-orange: #E1670E;
+  --grey: #CACACA;
 }
 
 html {
@@ -67,6 +68,7 @@ html {
 }
 
 body {
+  min-width: 1050px;
   background-color: var(--white);
   font-family: 'Montserrat', 'sans-serif';
   font-weight: 400;
@@ -74,13 +76,13 @@ body {
 }
 
 /* global styles */
-.list-reset {
+.list_reset {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.btn-reset {
+.btn_reset {
   padding: 0;
   border: none;
   background-color: transparent;
@@ -107,8 +109,10 @@ body {
 
 /* header */
 .header {
+  position: relative;
+  z-index: 1;
   padding: 14px 0px;
-  box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 25%);;
 }
 
 .header__wrapper {
@@ -194,4 +198,104 @@ body {
 
 .swiper__circle_white {
   fill-opacity: 1;
+}
+
+/* about-us */
+.about-us__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 59px;
+  color: var(--black);
+}
+
+.about-us__descr {
+  max-width: 1235px;
+  margin: 0;
+  margin-bottom: 50px;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--black);
+}
+
+.block-cards {
+  display: flex;
+}
+
+.card-hero {
+  width: calc((100% - 32px) / 2);
+  padding-top: 426px;
+  background-image: url('../img/about-us-worker.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-hero__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.card-hero__descr {
+  max-width: 454px;
+  margin: 0;
+  /* margin-right: 149px; */
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--white);
+}
+
+.card-hero__btn {
+  background-color: transparent;
+  outline: 3px solid var(--orange);
+}
+
+.block-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.block-cards__right-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: calc((100% - 32px) / 2);
+}
+
+.card {
+  padding: 65px 60px;
+  padding-left: 300px;
+  border: 1px solid var(--grey);
+  background-repeat: no-repeat;
+  background-position: 60px 65px;
+}
+
+.card-first {
+  background-image: url('../img/about-us-img-1.svg');
+}
+
+.card-second {
+  background-image: url('../img/about-us-img-2.svg');
+}
+
+.card__title {
+  margin: 0;
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29.26px;
+  color: var(--black);
+}
+
+.card__descr {
+  max-width: 450px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--black);
 }
