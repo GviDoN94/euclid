@@ -90,7 +90,8 @@ body {
 }
 
 .container {
-  max-width: 1770px;
+  max-width: 1800px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -103,7 +104,7 @@ body {
   background-color: var(--orange);
   font-weight: 700;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 19.5px;
   color: var(--white);
 }
 
@@ -180,7 +181,7 @@ body {
   margin-bottom: 55px;
   padding: 18.571px 37.1419px;
   font-size: 23.4581px;
-  line-height: 29px;
+  line-height: 28.6px;
 }
 
 .swiper{
@@ -224,8 +225,9 @@ body {
 }
 
 .card-hero {
+  display: flex;
+  align-items: flex-end;
   width: calc((100% - 32px) / 2);
-  padding-top: 426px;
   background-image: url('../img/about-us-worker.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -236,6 +238,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   padding: 50px;
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -243,7 +246,6 @@ body {
 .card-hero__descr {
   max-width: 454px;
   margin: 0;
-  /* margin-right: 149px; */
   font-weight: 700;
   font-size: 16px;
   line-height: 32px;
@@ -261,9 +263,6 @@ body {
 }
 
 .block-cards__right-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   width: calc((100% - 32px) / 2);
 }
 
@@ -273,6 +272,9 @@ body {
   border: 1px solid var(--grey);
   background-repeat: no-repeat;
   background-position: 60px 65px;
+}
+.card:not(:last-child) {
+ margin-bottom: 32px;
 }
 
 .card-first {
@@ -297,5 +299,81 @@ body {
   margin: 0;
   font-size: 16px;
   line-height: 32px;
+  color: var(--black);
+}
+
+/* how-we-work */
+.how-we-work__title {
+  margin: 0;
+  margin-bottom: 50px;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58.51px;
+}
+
+.swiper-steps {
+  margin-bottom: 45px;
+}
+
+.swiper-steps__button {
+  font-size: 18px;
+  line-height: 21.94px;
+  color: var(--black);
+}
+.swiper-steps__button:not(:last-child) {
+  margin-right: 85px;
+}
+
+.swiper-steps__button-active {
+  color: var(--dark-orange);
+}
+
+.article {
+  position: relative;
+}
+
+.article::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 900px;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.article::before {
+  background-image: url('../img/how-we-work-1.jpg');
+}
+
+.article__title {
+  margin: 0;
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--black);
+}
+
+.article__descr {
+  max-width: 758px;
+  margin: 0;
+  margin-bottom: 50px;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--black);
+}
+
+.article__btn:not(:last-child) {
+  margin-right: 32px;
+}
+
+.article__btn-white {
+  background-color: transparent;
+  outline: 1px solid var(--black);
+  font-weight: 400;
   color: var(--black);
 }
