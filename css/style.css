@@ -17,6 +17,10 @@ html {
   box-sizing: inherit;
 }
 
+img {
+  width: 100%;
+}
+
 @font-face {
   font-family: 'Montserrat';
   src: local('Montserrat-Regular'),
@@ -96,14 +100,22 @@ body {
 }
 
 .section {
-  margin-bottom: 100px;
+  padding: 50px 0;
+}
+
+.section:first-child {
+  padding-top: 0;
+}
+
+.section:last-child {
+  padding-bottom: 100px;
 }
 
 .section__title {
 margin: 0;
 font-weight: 400;
 font-size: 48px;
-line-height: 58.51px;
+line-height: 59px;
 color: var(--black);
 }
 
@@ -112,7 +124,7 @@ color: var(--black);
   background-color: var(--orange);
   font-weight: 700;
   font-size: 16px;
-  line-height: 19.5px;
+  line-height: 20px;
   color: var(--white);
 }
 
@@ -133,19 +145,19 @@ color: var(--black);
   margin-right: auto;
 }
 
-.header__nav {
+.nav {
   margin-right:  85px;
 }
 
-.header__list {
+.nav__list {
   display: flex;
 }
 
-.header-item:not(:last-child) {
+.nav__item:not(:last-child) {
   margin-right:  85px;
 }
 
-.header__link {
+.nav__link {
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
@@ -189,7 +201,7 @@ color: var(--black);
   margin-bottom: 55px;
   padding: 18.571px 37.1419px;
   font-size: 23.4581px;
-  line-height: 28.6px;
+  line-height: 29px;
 }
 
 .swiper-circle{
@@ -294,7 +306,7 @@ color: var(--black);
   margin-bottom: 8px;
   font-weight: 700;
   font-size: 24px;
-  line-height: 29.26px;
+  line-height: 29px;
   color: var(--black);
 }
 
@@ -322,7 +334,7 @@ color: var(--black);
 
 .swiper-steps__button {
   font-size: 18px;
-  line-height: 21.94px;
+  line-height: 22px;
   color: var(--black);
 }
 
