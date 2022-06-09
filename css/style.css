@@ -8,8 +8,9 @@
   --footer-bg: #222222;
   --input-bg: #414141;
   --social: #7C7C7C;
-  --input-bg-effects: #666666;
+  --dark-grey: #666666;
   --black: #000000;
+  --accordion-circle: #ECECEC;
 }
 
 html {
@@ -460,14 +461,14 @@ justify-content: space-between;
 }
 
 .article__btn-white:hover:not(:focus-visible) {
-  border-color: var(--input-bg-effects);
-  background-color: var(--input-bg-effects);
+  border-color: var(--dark-grey);
+  background-color: var(--dark-grey);
   color: var(--white);
 }
 
 .article__btn-white:focus-visible {
-  border-color: var(--input-bg-effects);
-  background-color: var(--input-bg-effects);
+  border-color: var(--dark-grey);
+  background-color: var(--dark-grey);
   color: var(--white);
 }
 
@@ -530,11 +531,68 @@ justify-content: space-between;
   font-size: 24px;
   line-height: 32px;
   color: var(--text);
-  transition: color 0.3s ease-in-out;
+  transition: color .3s ease-in-out;
+}
+
+.accordion__svg {
+  fill: var(--accordion-circle);
+  transition: transform .3s ease-in-out, fill .3s ease-in-out;
 }
 
 .accordion__cros {
-  transition: transform 0.3 ease-in-out;
+  fill: var(--dark-grey);
+}
+
+.accordion__btn:hover:not(:focus-visible) {
+  border-color: var(--orange);
+  z-index: 1;
+}
+
+.accordion__btn:hover:not(:focus-visible) .accordion__descr {
+  color: var(--orange);
+}
+
+.accordion__btn:hover:not(:focus-visible) .accordion__svg {
+  fill: var(--orange);
+}
+
+.accordion__btn:hover:not(:focus-visible) .accordion__cros {
+  fill: var(--white);
+}
+
+.accordion__btn:focus-visible {
+  outline: none;
+  border-color: var(--orange);
+  z-index: 1;
+}
+
+.accordion__btn:focus-visible .accordion__descr {
+  color: var(--orange);
+}
+
+.accordion__btn:focus-visible .accordion__svg {
+  fill: var(--orange);
+}
+
+.accordion__btn:focus-visible .accordion__cros {
+  fill: var(--white);
+}
+
+.accordion__btn:active:not(:focus-visible) {
+  border-color: var(--grey);
+}
+
+.accordion__btn:active:not(:focus-visible) .accordion__descr {
+  color: var(--text);
+}
+
+.accordion__btn:active:not(:focus-visible) .accordion__svg {
+  fill: var(--accordion-circle);
+  transform: rotate(45deg);
+}
+
+.accordion__btn:active:not(:focus-visible) .accordion__cros {
+  fill: var(--dark-grey);
 }
 
 /* footer */
@@ -636,12 +694,12 @@ footer {
 
 .form__input:hover:not(:focus-visible),
 .form__textarea:hover:not(:focus-visible) {
-  background-color: var(--input-bg-effects);
+  background-color: var(--dark-grey);
 }
 
 .form__input:focus-visible,
 .form__textarea:focus-visible {
-  background-color: var(--input-bg-effects);
+  background-color: var(--dark-grey);
 }
 
 .form__input::placeholder, .form__textarea::placeholder {
