@@ -18,7 +18,7 @@
        <nav class="nav">
          <ul class="nav__list list_reset">
            <li class="nav__item">
-             <a href="#" class="nav__link">О&nbsp;нас</a>
+             <a href="#about-us" class="nav__link">О&nbsp;нас</a>
            </li>
            <li class="nav__item">
              <a href="#" class="nav__link">Проекты</a>
@@ -30,14 +30,14 @@
              <a href="#" class="nav__link">Отзывы</a>
            </li>
            <li class="nav__item">
-             <a href="#" class="nav__link">Контакты</a>
+             <a href="#contacts" class="nav__link">Контакты</a>
            </li>
          </ul>
        </nav>
-       <button class="header__search btn_reset">
-        <svg class="header__search-img" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)" fill="#333333"/>
-          <path d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z" stroke="#333333" stroke-width="2"/>
+       <button class="search btn_reset">
+        <svg class="search__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)" />
+          <path d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z" stroke-width="2"/>
           </svg>
        </button>
     </div>
@@ -78,7 +78,7 @@
         </div>
       </div>
     </section>
-    <section class="section about-us">
+    <section class="section about-us" id="about-us">
       <div class="container">
         <h2 class="section__title about-us__title">О&nbsp;нас</h2>
         <p class="about-us__descr">
@@ -193,14 +193,14 @@
       </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="contacts">
       <div class="container footer__wrapper">
         <div class="footer__left">
           <img class="footer__logo" src="img/footer-logo.svg" alt="Логотип Евклид">
-          <nav class="nav footer__nav">
+          <nav class="nav nav_column">
             <ul class="nav__list nav__list_column list_reset">
               <li class="nav__item nav__item_not-margin">
-                <a href="#" class="nav__link nav__link_grey">О&nbsp;нас</a>
+                <a href="#about-us" class="nav__link nav__link_grey">О&nbsp;нас</a>
               </li>
               <li class="nav__item nav__item_not-margin">
                 <a href="#" class="nav__link nav__link_grey">Проекты</a>
@@ -257,7 +257,7 @@
             <div class="form__submit-wrapper">
               <button class="form__btn btn btn_reset" type="submit">Отправить данные</button>
               <label class="checkbox">
-                <input class="checkbox__input" type="checkbox" checked>
+                <input class="checkbox__input" type="checkbox" checked required>
                 <span class="checkbox__text">Согласен на&nbsp;обработку данных</span>
               </label>
             </div>

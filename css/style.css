@@ -213,6 +213,41 @@ color: var(--text);
   background-color: var(--dark-orange);
 }
 
+.search {
+  outline: 2px solid transparent;
+  outline-offset: 4px;
+  font-size: 0;
+  transition: outline-color .3s ease-in-out;
+}
+
+.search__svg {
+  stroke: var(--text);
+  transition: stroke .3s ease-in-out;
+}
+
+.search__svg rect {
+  fill: var(--text);
+  transition: fill .3s ease-in-out;
+}
+
+.search__svg:hover:not(:focus-visible) {
+  stroke: var(--orange);
+}
+.search__svg:hover:not(:focus-visible) rect {
+  fill: var(--orange);
+}
+
+.search:focus-visible {
+  outline-color: var(--orange);
+}
+
+.search__svg:active:not(:focus-visible) {
+  stroke: var(--orange);
+}
+.search__svg:active:not(:focus-visible) rect {
+  fill: var(--orange);
+}
+
 /* hero */
 .hero__wrapper {
  display: flex;
@@ -610,7 +645,7 @@ footer {
   margin-bottom: 20px;
 }
 
-.footer__nav {
+.nav_column {
   margin: 0;
   margin-bottom: 90px;
 }
@@ -626,6 +661,20 @@ footer {
 .nav__link_grey {
   line-height: 36px;
   color: var(--grey);
+  transition: color .3s ease-in-out;
+}
+
+.nav__link_grey:hover:not(:focus-visible) {
+  color: var(--orange);
+}
+
+.nav__link_grey:hover:not(:focus-visible)::before {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.nav__link_grey:active:not(:focus-visible) {
+  color: var(--dark-orange)
 }
 
 .social {
@@ -684,6 +733,14 @@ footer {
   background-color: var(--input-bg);
   color: var(--white);
   transition: backgroun-color .3s ease-in-out;
+}
+
+.form__input:-webkit-autofill,
+.form__input:-webkit-autofill:hover,
+.form__input:-webkit-autofill:focus,
+.form__input:-webkit-autofill:active  {
+     box-shadow: 0 0 0 30px var(--dark-grey) inset !important;
+     -webkit-text-fill-color: var(--white);
 }
 
 .form__textarea {
