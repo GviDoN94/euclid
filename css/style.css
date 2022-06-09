@@ -382,18 +382,26 @@ color: var(--text);
 }
 
 .block-cards__right-wrapper {
+  display: flex;
+  flex-direction: column;
   width: calc((100% - 32px) / 2);
 }
 
 .card {
+  flex: 1;
   padding: 64px 60px;
   padding-left: 298px;
   border: 1px solid var(--grey);
   background-repeat: no-repeat;
   background-position: 60px 65px;
 }
+
 .card:not(:last-child) {
  margin-bottom: 32px;
+}
+
+.block-cards__right-wrapper .card {
+  flex: 1;
 }
 
 .card-first {
