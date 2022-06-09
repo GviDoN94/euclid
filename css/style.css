@@ -1,6 +1,6 @@
 :root {
   --white: #FFFFFF;
-  --black: #333333;
+  --text: #333333;
   --orange: #FF9900;
   --light-orange: rgba(255, 153, 0, 0.7);
   --dark-orange: #E1670E;
@@ -8,6 +8,8 @@
   --footer-bg: #222222;
   --input-bg: #414141;
   --social: #7C7C7C;
+  --input-bg-effects: #666666;
+  --black: #000000;
 }
 
 html {
@@ -111,16 +113,30 @@ margin: 0;
 font-weight: 400;
 font-size: 48px;
 line-height: 59px;
-color: var(--black);
+color: var(--text);
 }
 
 .btn {
   padding: 19px 38px;
+  outline: none;
   background-color: var(--orange);
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   color: var(--white);
+  transition: background-color .3s ease-in-out, border .3s ease-in-out;
+}
+
+.btn:hover:not(:focus-visible) {
+  background-color: var(--light-orange);
+}
+
+.btn:focus-visible {
+  background-color: var(--light-orange);
+}
+
+.btn:active:not(:focus-visible) {
+  background-color: var(--dark-orange);
 }
 
 /* header */
@@ -160,7 +176,7 @@ color: var(--black);
   font-size: 18px;
   line-height: 22px;
   text-decoration: none;
-  color: var(--black);
+  color: var(--text);
   transition: color .3s ease-in-out, outline .3s ease-in-out;
 }
 
@@ -264,7 +280,7 @@ color: var(--black);
   margin-bottom: 50px;
   font-size: 16px;
   line-height: 32px;
-  color: var(--black);
+  color: var(--text);
 }
 
 .block-cards {
@@ -301,7 +317,21 @@ color: var(--black);
 
 .card-hero__btn {
   background-color: transparent;
-  outline: 3px solid var(--orange);
+  border: 3px solid var(--orange);
+  transition: border .3s ease-in-out, background-color .3s ease-in-out;
+}
+
+.card-hero__btn:hover:not(:focus-visible) {
+  background-color: var(--orange);
+}
+
+.card-hero__btn:focus-visible {
+  background-color: var(--orange);
+}
+
+.card-hero__btn:active:not(:focus-visible) {
+  border-color: var(--dark-orange);
+  background-color: var(--dark-orange);
 }
 
 .block-cards {
@@ -338,7 +368,7 @@ color: var(--black);
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
-  color: var(--black);
+  color: var(--text);
 }
 
 .card__descr {
@@ -346,7 +376,7 @@ color: var(--black);
   margin: 0;
   font-size: 16px;
   line-height: 32px;
-  color: var(--black);
+  color: var(--text);
 }
 
 /* how-we-work */
@@ -368,7 +398,7 @@ color: var(--black);
   outline-offset: 5px;
   font-size: 18px;
   line-height: 22px;
-  color: var(--black);
+  color: var(--text);
   transition: color .3s ease-in-out, outline .3s ease-in-out;
 }
 
@@ -403,7 +433,7 @@ justify-content: space-between;
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
-  color: var(--black);
+  color: var(--text);
 }
 
 .article__descr {
@@ -412,7 +442,7 @@ justify-content: space-between;
   margin-bottom: 50px;
   font-size: 16px;
   line-height: 32px;
-  color: var(--black);
+  color: var(--text);
 }
 
 .article__btn:not(:last-child) {
@@ -421,9 +451,30 @@ justify-content: space-between;
 
 .article__btn-white {
   background-color: transparent;
-  outline: 1px solid var(--black);
+  border: 1px solid var(--text);
   font-weight: 400;
-  color: var(--black);
+  color: var(--text);
+  transition-property: background-color, border, color;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+}
+
+.article__btn-white:hover:not(:focus-visible) {
+  border-color: var(--input-bg-effects);
+  background-color: var(--input-bg-effects);
+  color: var(--white);
+}
+
+.article__btn-white:focus-visible {
+  border-color: var(--input-bg-effects);
+  background-color: var(--input-bg-effects);
+  color: var(--white);
+}
+
+.article__btn-white:active:not(:focus-visible) {
+  border-color: var(--black);
+  background-color: var(--black);
+  color: var(--white);
 }
 
 .article__right {
@@ -478,7 +529,7 @@ justify-content: space-between;
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
-  color: var(--black);
+  color: var(--text);
   transition: color 0.3s ease-in-out;
 }
 
@@ -565,19 +616,32 @@ footer {
   color: var(--grey);
 }
 
-.form__input, .form__textarea {
+.form__input,
+.form__textarea {
   min-height: 60px;
   margin-bottom: 25px;
   padding: 14px 24px;
   border: none;
+  outline: none;
   background-color: var(--input-bg);
   color: var(--white);
+  transition: backgroun-color .3s ease-in-out;
 }
 
 .form__textarea {
   min-height: 150px;
   margin-bottom: 32px;
   resize: none;
+}
+
+.form__input:hover:not(:focus-visible),
+.form__textarea:hover:not(:focus-visible) {
+  background-color: var(--input-bg-effects);
+}
+
+.form__input:focus-visible,
+.form__textarea:focus-visible {
+  background-color: var(--input-bg-effects);
 }
 
 .form__input::placeholder, .form__textarea::placeholder {
