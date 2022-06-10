@@ -74,7 +74,7 @@ html {
 }
 
 body {
-  min-width: 320px;
+  min-width: 1920px;
   background-color: var(--white);
   font-family: 'Montserrat', 'sans-serif';
   font-weight: 400;
@@ -584,6 +584,11 @@ justify-content: space-between;
   transition: color .3s ease-in-out;
 }
 
+.accordion__descr_grey {
+  color: var(--grey);
+  transition: color .3s ease-in-out;
+}
+
 .accordion__svg {
   fill: var(--accordion-circle);
   transition: transform .3s ease-in-out, fill .3s ease-in-out;
@@ -599,6 +604,10 @@ justify-content: space-between;
 }
 
 .accordion__btn:hover:not(:focus-visible) .accordion__descr {
+  color: var(--orange);
+}
+
+.accordion__btn:hover:not(:focus-visible) .accordion__descr_grey {
   color: var(--orange);
 }
 
@@ -620,6 +629,10 @@ justify-content: space-between;
   color: var(--orange);
 }
 
+.accordion__btn:focus-visible .accordion__descr_grey {
+  color: var(--orange);
+}
+
 .accordion__btn:focus-visible .accordion__svg {
   fill: var(--orange);
 }
@@ -634,6 +647,10 @@ justify-content: space-between;
 
 .accordion__btn:active:not(:focus-visible) .accordion__descr {
   color: var(--text);
+}
+
+.accordion__btn:active:not(:focus-visible) .accordion__descr_grey {
+  color: var(--grey);
 }
 
 .accordion__btn:active:not(:focus-visible) .accordion__svg {
