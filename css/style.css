@@ -74,7 +74,7 @@ html {
 }
 
 body {
-  min-width: 1920px;
+  min-width: 320px;
   background-color: var(--white);
   font-family: 'Montserrat', 'sans-serif';
   font-weight: 400;
@@ -128,10 +128,6 @@ color: var(--text);
   line-height: 20px;
   color: var(--white);
   transition: background-color .3s ease-in-out, border .3s ease-in-out;
-}
-
-.btn:hover:not(:focus-visible) {
-  background-color: var(--light-orange);
 }
 
 .btn:focus-visible {
@@ -200,11 +196,6 @@ color: var(--text);
   transition-timing-function: ease-in-out;
 }
 
-.nav__link:hover:not(:focus-visible):before {
-  opacity: 1;
-  transform: scale(1);
-}
-
 .nav__link:focus-visible {
   outline-color: var(--orange);
 }
@@ -232,13 +223,6 @@ color: var(--text);
 .search__svg rect {
   fill: var(--text);
   transition: fill .3s ease-in-out;
-}
-
-.search__svg:hover:not(:focus-visible) {
-  stroke: var(--orange);
-}
-.search__svg:hover:not(:focus-visible) rect {
-  fill: var(--orange);
 }
 
 .search:focus-visible {
@@ -363,10 +347,6 @@ color: var(--text);
   transition: outline-color .3s ease-in-out, background-color .3s ease-in-out;
 }
 
-.card-hero__btn:hover:not(:focus-visible) {
-  background-color: var(--orange);
-}
-
 .card-hero__btn:focus-visible {
   background-color: var(--orange);
 }
@@ -456,10 +436,6 @@ color: var(--text);
   color: var(--dark-orange);
 }
 
-.tabs__button:hover:not(:focus-visible) {
-  color: var(--orange);
-}
-
 .tabs__button:focus-visible {
   outline-color: var(--orange);
 }
@@ -507,12 +483,6 @@ justify-content: space-between;
   transition-property: background-color, border, color;
   transition-duration: .3s;
   transition-timing-function: ease-in-out;
-}
-
-.article__btn-white:hover:not(:focus-visible) {
-  border-color: var(--dark-grey);
-  background-color: var(--dark-grey);
-  color: var(--white);
 }
 
 .article__btn-white:focus-visible {
@@ -598,27 +568,6 @@ justify-content: space-between;
   fill: var(--dark-grey);
 }
 
-.accordion__btn:hover:not(:focus-visible) {
-  border-color: var(--orange);
-  z-index: 1;
-}
-
-.accordion__btn:hover:not(:focus-visible) .accordion__descr {
-  color: var(--orange);
-}
-
-.accordion__btn:hover:not(:focus-visible) .accordion__descr_grey {
-  color: var(--orange);
-}
-
-.accordion__btn:hover:not(:focus-visible) .accordion__svg {
-  fill: var(--orange);
-}
-
-.accordion__btn:hover:not(:focus-visible) .accordion__cros {
-  fill: var(--white);
-}
-
 .accordion__btn:focus-visible {
   outline: none;
   border-color: var(--orange);
@@ -701,15 +650,6 @@ footer {
   transition: color .3s ease-in-out;
 }
 
-.nav__link_grey:hover:not(:focus-visible) {
-  color: var(--orange);
-}
-
-.nav__link_grey:hover:not(:focus-visible)::before {
-  opacity: 0;
-  transform: scale(0);
-}
-
 .nav__link_grey:active:not(:focus-visible) {
   color: var(--dark-orange)
 }
@@ -735,10 +675,6 @@ footer {
 .social__img {
   fill: var(--social);
   transition: fill .3s ease-in-out;
-}
-
-.social__img:hover:not(:focus-visible) {
-  fill: var(--orange);
 }
 
 .social__img:active:not(:focus-visible) {
@@ -778,7 +714,6 @@ footer {
 }
 
 .form__input:-webkit-autofill,
-.form__input:-webkit-autofill:hover,
 .form__input:-webkit-autofill:focus,
 .form__input:-webkit-autofill:active  {
      box-shadow: 0 0 0 30px var(--dark-grey) inset !important;
@@ -789,11 +724,6 @@ footer {
   min-height: 150px;
   margin-bottom: 32px;
   resize: none;
-}
-
-.form__input:hover:not(:focus-visible),
-.form__textarea:hover:not(:focus-visible) {
-  background-color: var(--dark-grey);
 }
 
 .form__input:focus-visible,
