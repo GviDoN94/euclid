@@ -1,0 +1,76 @@
+@media (min-width: 1024px) {
+  .btn:hover:not(:focus-visible) {
+    background-color: var(--light-orange);
+  }
+
+  .nav__link:hover:not(:focus-visible):before {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .search__svg:hover:not(:focus-visible) {
+    stroke: var(--orange);
+  }
+
+  .search__svg:hover:not(:focus-visible) rect {
+    fill: var(--orange);
+  }
+
+  .card-hero__btn:hover:not(:focus-visible) {
+    background-color: var(--orange);
+  }
+
+  .tabs__button:hover:not(:focus-visible) {
+    color: var(--orange);
+  }
+
+  .article__btn-white:hover:not(:focus-visible) {
+    border-color: var(--dark-grey);
+    background-color: var(--dark-grey);
+    color: var(--white);
+  }
+
+  .accordion__btn:hover:not(:focus-visible) {
+    border-color: var(--orange);
+    z-index: 1;
+  }
+
+  .accordion__btn:hover:not(:focus-visible) .accordion__descr {
+    color: var(--orange);
+  }
+
+  .accordion__btn:hover:not(:focus-visible) .accordion__descr_grey {
+    color: var(--orange);
+  }
+
+  .accordion__btn:hover:not(:focus-visible) .accordion__svg {
+    fill: var(--orange);
+  }
+
+  .accordion__btn:hover:not(:focus-visible) .accordion__cros {
+    fill: var(--white);
+  }
+
+  .nav__link_grey:hover:not(:focus-visible) {
+    color: var(--orange);
+  }
+
+  .nav__link_grey:hover:not(:focus-visible)::before {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  .social__img:hover:not(:focus-visible) {
+    fill: var(--orange);
+  }
+
+  .form__input:-webkit-autofill:hover {
+    box-shadow: 0 0 0 30px var(--dark-grey) inset !important;
+    -webkit-text-fill-color: var(--white);
+  }
+
+  .form__input:hover:not(:focus-visible),
+  .form__textarea:hover:not(:focus-visible) {
+    background-color: var(--dark-grey);
+  }
+}
