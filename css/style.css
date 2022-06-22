@@ -882,6 +882,7 @@ footer {
 }
 
 @media (max-width: 1199px) {
+  /*header*/
   .header {
     padding: 25px 0 23px;
   }
@@ -932,4 +933,7 @@ footer {
   .header__nav {
     display: none;
   }
+
+  /*hero*/
+  
 }
