@@ -882,6 +882,15 @@ footer {
 }
 
 @media (max-width: 1199px) {
+/*global*/
+.section {
+  padding: 40px 0;
+}
+
+.section__title {
+  padding: 0;
+}
+
   /*header*/
   .header {
     padding: 25px 0 23px;
@@ -895,29 +904,46 @@ footer {
     position: relative;
     width: 30px;
     height: 23px;
+    margin-top: -2px;
     margin-right: -8px;
+    outline-offset: 5px;
+    outline: 2px solid transparent;
+    transition: outline-color .3s ease-in-out;
   }
 
   .burger__line {
     position: absolute;
     left: 50%;
-    width: 30px;
+    width: 100%;
     height: 3px;
     background-color: var(--text);
     transform: translateX(-50%);
-  }
-
-  .burger__line:nth-child(1) {
-    top: -2px;
+    transition: background-color .3s ease-in;
   }
 
   .burger__line:nth-child(3) {
-    bottom: 2px;
+    top: 0;
+  }
+
+  .burger__line:nth-child(1) {
+    bottom: 0;
   }
 
   .burger__line:nth-child(2) {
     top: 50%;
-    transform: translate(-50%, -100%);
+    transform: translate(-50%, -50%);
+  }
+
+  .burger:focus-visible {
+    outline-color: var(--orange);
+  }
+
+  .burger:active:not(:focus-visible) .burger__line {
+    background-color: var(--dark-orange);
+  }
+
+  .burger:active:not(:focus-visible) .burger__line {
+    background-color: var(--dark-orange);
   }
 
   .header__logo-link {
@@ -935,5 +961,57 @@ footer {
   }
 
   /*hero*/
-  
+  .hero__wrapper{
+    padding: 160px 77px 25px;
+  }
+
+  .hero__title {
+    margin-bottom: 16px;
+    font-size: 60px;
+    line-height: 73px;
+  }
+
+  .hero__descr {
+    margin-bottom: 60px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .hero__button {
+    margin-bottom: 116px;
+  }
+
+  /*about-us*/
+  .about-us__title {
+    margin-bottom: 11px;
+  }
+
+  .about-us__descr {
+    margin-bottom: 61px;
+  }
+
+  .block-cards {
+    flex-direction: column;
+  }
+
+  .card-hero, .block-cards__right-wrapper  {
+    width: 100%;
+  }
+
+  .card-hero {
+    min-height: 640px;
+    margin-bottom: 32px;
+  }
+
+  .card-hero__wrapper {
+    padding: 5.4% 5.4%;
+    padding-right: 5.8%;
+  }
+
+  .card {
+    padding: 6.93% 5%;
+    padding-left: 34.2%;
+    background-position: 10.5% 50%;
+    background-size: 20.5%;
+  }
 }
