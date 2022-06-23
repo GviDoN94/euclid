@@ -274,4 +274,34 @@
   .accordion__descr {
     max-width: 570px;
   }
+
+  /* footer */
+  .footer__wrapper {
+    flex-direction: column-reverse;
+    padding-bottom: 45px;
+  }
+
+  .nav_column {
+    display: none;
+  }
+
+  .footer__center {
+    width: 81%;
+  }
+
+  .form__submit-wrapper {
+    margin-bottom: 50px;
+  }
+
+  .footer__logo {
+    margin-bottom: 12px;
+  }
+
+  .social {
+    padding-left: 2px;
+  }
+
+  .social__item:not(:last-child) {
+    margin-right: 11.3%;
+  }
 }
