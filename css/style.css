@@ -588,18 +588,15 @@ justify-content: space-between;
   right: 0;
   bottom: 0;
   left: 0;
+  background-image: url('../img/how-we-work-1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.article__right::before {
-  background-image: url('../img/how-we-work-1.jpg');
-}
-
 /* faq */
 .faq {
- padding-bottom: 101px;
+ padding-bottom: 100px;
 }
 
 .faq__title {
@@ -951,6 +948,7 @@ footer {
   /*hero*/
   .hero__wrapper{
     padding: 160px 77px 25px;
+    background-image: url('../img/hero-bg-1-photo-of-balconies_1024.jpg');
   }
   .hero__title {
     margin-bottom: 16px;
@@ -982,6 +980,7 @@ footer {
   .card-hero {
     min-height: 640px;
     margin-bottom: 32px;
+    background-image: url('../img/about-us-worker_1024.jpg');
   }
   .card-hero__wrapper {
     padding: 5.4% 5.4%;
@@ -1004,6 +1003,7 @@ footer {
 
   .article__right::before {
     top: 11px;
+    background-image: url('../img/how-we-work-1_1024.jpg');
   }
 
   .article__descr {
