@@ -1,4 +1,5 @@
 :root {
+  --text: #333333;
   --orange: #FF9900;
   --dark-orange: #E1670E;
 }
@@ -307,12 +308,18 @@
 }
 
 @media (max-width: 576px) {
-  .about-us {
-    display: none;
-  }
   /* global */
   .container {
     padding: 0 15px;
+  }
+
+  .section {
+    padding: 30px 0;
+  }
+
+  .section__title {
+    font-size: 24px;
+    line-height: 29px;
   }
 
   .btn {
@@ -357,5 +364,80 @@
   .swiper-circle__circle {
     width: 10px;
     height: 10px;
+  }
+
+  /* about us */
+  .about-us__title {
+    margin-bottom: 20px;
+  }
+
+  .about-us__descr {
+    margin-bottom: 14px;
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .card-hero {
+    position: relative;
+    min-height: 200px;
+    margin-bottom: 210px;
+    background-image: url('../img/about-us-worker_320.jpg');
+  }
+
+  .card-hero__wrapper {
+    position: absolute;
+    top: 208px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    background: none;
+  }
+
+  .card-hero__descr {
+    margin: 0;
+    margin-bottom: 11px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    color: var(--text);
+  }
+
+  .card-hero__btn {
+    padding: 9px 42px 12px;
+    border: 2px solid var(--orange);
+    outline: none;
+    color: var(--orange);
+  }
+
+  .card {
+    padding: 0;
+    padding-top: 28.4%;
+    border: none;
+    background-position: 0 9%;
+    background-size: 22%;
+  }
+
+  .card:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .card-first {
+    background-image: url('../img/about-us-img-1_320.svg');
+  }
+
+  .card-second {
+    background-image: url('../img/about-us-img-2_320.svg');
+  }
+
+  .card__title {
+    margin-bottom: 4px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .card__descr {
+    font-size: 14px;
+    line-height: 28px;
   }
 }
