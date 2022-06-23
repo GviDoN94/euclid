@@ -238,4 +238,31 @@
     background-position: 7.2% 50%;
     background-size: 17%;
   }
+
+  /* how we work */
+  .tabs {
+    justify-content: space-between;
+    margin-bottom: 39px;
+  }
+
+  .tabs__item:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .article {
+    flex-direction: column-reverse;
+  }
+
+  .article__left, .article__right {
+    width: 100%;
+  }
+
+  .article__right {
+    min-height: 295px;
+    margin-bottom: 39px;
+  }
+
+  .article__right::before {
+    background-image: url('../img/how-we-work-1_768.jpg');
+  }
 }
