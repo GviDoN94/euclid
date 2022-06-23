@@ -265,4 +265,13 @@
   .article__right::before {
     background-image: url('../img/how-we-work-1_768.jpg');
   }
+
+  /* faq */
+  .faq__title {
+    margin-bottom: 31px;
+  }
+
+  .accordion__descr {
+    max-width: 570px;
+  }
 }
