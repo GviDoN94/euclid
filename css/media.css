@@ -305,3 +305,57 @@
     margin-right: 11.3%;
   }
 }
+
+@media (max-width: 576px) {
+  .about-us {
+    display: none;
+  }
+  /* global */
+  .container {
+    padding: 0 15px;
+  }
+
+  .btn {
+    padding: 11px 28px 14px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  /* header */
+  .header {
+    padding: 16px 0 13px;
+  }
+
+  .header__logo {
+    width: 110px;
+  }
+
+  /* hero */
+  .hero__wrapper {
+    padding: 60px 22px 11px;
+    text-align: center;
+    background-image: url('../img/hero-bg-1-photo-of-balconies_320.jpg');
+  }
+
+  .hero__title {
+    margin-bottom: 8px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .hero__descr {
+    margin-bottom: 32px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .hero__button {
+    align-self: center;
+    margin-bottom: 31px;
+  }
+
+  .swiper-circle__circle {
+    width: 10px;
+    height: 10px;
+  }
+}
