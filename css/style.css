@@ -102,7 +102,7 @@ body {
 }
 
 .section {
-  padding: 50px 0;
+  padding: 51px 0;
 }
 
 .section:first-child {
@@ -111,8 +111,6 @@ body {
 
 .section__title {
 margin: 0;
-padding-top: 2px;
-padding-left: 2px;
 font-weight: 400;
 font-size: 48px;
 line-height: 59px;
@@ -120,7 +118,8 @@ color: var(--text);
 }
 
 .btn {
-  padding: 19px 38px;
+  /* padding: 20px 38px; */
+  padding: 21px 38px 18px;
   outline: none;
   background-color: var(--orange);
   font-weight: 700;
@@ -219,7 +218,7 @@ color: var(--text);
 .header {
   position: relative;
   z-index: 1;
-  padding: 14px 0px 10px;
+  padding: 16px 0px 10px;
   box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 25%);;
 }
 
@@ -403,7 +402,7 @@ color: var(--text);
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 5.7% 5.8%;
+  padding: 5.8% 5.8%;
   padding-right: 6.2%;
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -490,7 +489,7 @@ color: var(--text);
 
 /* how we work */
 .how-we-work__title {
-  margin-bottom: 50px;
+  margin-bottom: 48px;
 }
 
 .tabs {
@@ -596,7 +595,7 @@ justify-content: space-between;
 
 /* faq */
 .faq {
- padding-bottom: 100px;
+ padding-bottom: 101px;
 }
 
 .faq__title {
@@ -637,6 +636,8 @@ justify-content: space-between;
 }
 
 .accordion__svg {
+  min-width: 50px;
+  min-height: 50px;
   fill: var(--accordion-circle);
   transition: transform .3s ease-in-out, fill .3s ease-in-out;
 }
@@ -715,7 +716,6 @@ footer {
 
 .nav__list_column {
  flex-direction: column;
- width: max-content;
 }
 
 .nav__item_not-margin:not(:last-child) {
@@ -724,6 +724,7 @@ footer {
 }
 
 .nav__link_grey {
+  white-space: nowrap;
   line-height: 198%;
   color: var(--grey);
   transition: color .3s ease-in-out;
@@ -784,7 +785,7 @@ footer {
 .form__textarea {
   min-height: 60px;
   margin-bottom: 25px;
-  padding: 14px 24px;
+  padding: 16px 24px 12px;
   border: none;
   outline: none;
   background-color: var(--input-bg);
@@ -825,11 +826,13 @@ footer {
 
 .form__btn {
   margin-right: 3%;
-  padding: 3.3% 9.1%;
+  padding: 21px 52px 18px;
+  white-space: nowrap;
 }
 
 .checkbox {
   cursor: pointer;
+  padding-top: 4px;
 }
 
 .checkbox__input {
@@ -844,7 +847,6 @@ footer {
   position: relative;
   padding-left: 18px;
   font-size: 16px;
-  line-height: 32px;
   color: var(--grey);
 }
 

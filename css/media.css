@@ -15,7 +15,7 @@
 
   /*header*/
   .header {
-    padding: 25px 0 23px;
+    padding: 18px 0 23px;
   }
   .header__wrapper {
     justify-content: space-between;
@@ -118,6 +118,10 @@
     background-size: 20.5%;
   }
   /* how we work */
+  .how-we-work__title {
+    margin-bottom: 49px;
+  }
+
   .tabs {
     margin-bottom: 51px;
   }
@@ -157,6 +161,7 @@
 
   .footer__left {
     width: 27%;
+    margin-right: 10px;
   }
 
   .nav__link_grey {
@@ -164,7 +169,7 @@
   }
 
   .footer__center {
-    width: 58.5%;
+    min-width: 58.5%;
     padding: 0;
   }
 
@@ -173,7 +178,7 @@
   }
 
   .form__btn {
-    padding: 3.8% 7%;
+    padding: 21px 37.5px 18px;
   }
 
   .checkbox__text {
@@ -183,5 +188,28 @@
 
   .footer__right {
     display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  /* header */
+  .header {
+    padding: 8px 0 9px
+  }
+
+  /* hero */
+  .hero__wrapper {
+    padding: 160px 40px 25px;
+    background-image: url('../img/hero-bg-1-photo-of-balconies_768.jpg');
+  }
+
+  .hero__title {
+    font-size: 50px;
+    line-height: 61px;
+  }
+
+  .hero__descr {
+    font-size: 18px;
+    line-height: 22px;
   }
 }
