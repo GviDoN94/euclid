@@ -212,4 +212,30 @@
     font-size: 18px;
     line-height: 22px;
   }
+
+  /* about us */
+  .about-us__descr {
+    margin-bottom: 59px;
+  }
+
+  .card-hero {
+    min-height: 650px;
+    /* background-image: url('../img/about-us-worker_768.jpg'); */
+  }
+
+  .card-hero__wrapper {
+    padding: 5.1% 6%;
+    padding-right: 6.5%;
+  }
+
+  .card-hero__descr {
+    max-width: 366px;
+  }
+
+  .card {
+    padding: 5.1% 5%;
+    padding-left: 25.3%;
+    background-position: 7.2% 50%;
+    background-size: 17%;
+  }
 }
