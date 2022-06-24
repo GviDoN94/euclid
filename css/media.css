@@ -345,13 +345,13 @@
   }
 
   .hero__title {
-    margin-bottom: 8px;
+    margin-bottom: 7px;
     font-size: 20px;
     line-height: 24px;
   }
 
   .hero__descr {
-    margin-bottom: 32px;
+    margin-bottom: 33px;
     font-size: 12px;
     line-height: 15px;
   }
@@ -487,5 +487,28 @@
   .article__btn-white {
     margin-left: -4px;
     padding: 10px 31px 13px 32px;
+  }
+
+  /* faq */
+  .faq {
+    padding-bottom: 61px;
+  }
+
+  .faq__title {
+    margin-bottom: 16px;
+  }
+
+  .accordion__descr {
+    max-width: 243px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .accordion__svg {
+    min-width: auto;
+    min-height: auto;
+    width: 30px;
+    height: 30px;
   }
 }
