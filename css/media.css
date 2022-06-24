@@ -1,4 +1,5 @@
 :root {
+  --white: #FFFFFF;
   --orange: #FF9900;
   --dark-orange: #E1670E;
   --text: #333333;
@@ -410,6 +411,15 @@
     border: 2px solid var(--orange);
     outline: none;
     color: var(--orange);
+  }
+
+  .card-hero__btn:focus-visible {
+    color: var(--white);
+  }
+
+  .card-hero__btn:not(:focus-visible):active {
+    border-color: var(--dark-orange);
+    color: var(--white);
   }
 
   .card {
