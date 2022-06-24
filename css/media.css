@@ -440,4 +440,52 @@
     font-size: 14px;
     line-height: 28px;
   }
+
+  /* how we work */
+  .how-we-work__title {
+    margin-bottom: 21px;
+  }
+
+  .tabs {
+    margin-bottom: 4px;
+  }
+
+  .tabs__button {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .article__right {
+    min-height: 171px;
+    margin-bottom: 16px;
+  }
+
+  .article__right::before {
+    background-image: url(../img/how-we-work-1_320.jpg);
+  }
+
+  .article__title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .article__descr {
+    margin-bottom: 16px;
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .article__btn-wide {
+    padding: 11px 44px 14px;
+  }
+
+  .article__btn:not(:last-child) {
+    margin-right: 3.3%;
+  }
+
+  .article__btn-white {
+    margin-left: -4px;
+    padding: 10px 31px 13px 32px;
+  }
 }
