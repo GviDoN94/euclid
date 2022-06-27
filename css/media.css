@@ -18,7 +18,7 @@
 
   /*header*/
   .header {
-    padding: 18px 0 23px;
+    padding: 24px 0;
   }
   .header__wrapper {
     justify-content: space-between;
@@ -63,7 +63,6 @@
   }
   .header__logo-link {
     margin: 0;
-    padding-left: -2px;
   }
   .header__logo {
    width: 150px;
@@ -126,20 +125,20 @@
   }
 
   .tabs {
-    margin-bottom: 51px;
+    margin-bottom: 52px;
   }
 
   .article__left, .article__right {
     width: calc((100% - 49px) / 2);
   }
 
-  .article__right::before {
-    top: 11px;
-    background-image: url('../img/how-we-work-1_1024.jpg');
+  .article__descr {
+    padding-bottom: 84px;
   }
 
-  .article__descr {
-    margin-bottom: 24px;
+  .article__right-first::before {
+    top: 11px;
+    background-image: url('../img/how-we-work-1_1024.jpg');
   }
 
   /* faq */
@@ -223,7 +222,7 @@
 
   .card-hero {
     min-height: 650px;
-    /* background-image: url('../img/about-us-worker_768.jpg'); */
+    background-image: url('../img/about-us-worker_768.jpg');
   }
 
   .card-hero__wrapper {
@@ -256,16 +255,17 @@
     flex-direction: column-reverse;
   }
 
-  .article__left, .article__right {
+  .article__left {
     width: 100%;
   }
 
   .article__right {
+    width: 100%;
     min-height: 295px;
     margin-bottom: 39px;
   }
 
-  .article__right::before {
+  .article__right-first::before {
     background-image: url('../img/how-we-work-1_768.jpg');
   }
 
@@ -473,7 +473,7 @@
     margin-bottom: 16px;
   }
 
-  .article__right::before {
+  .article__right-first::before {
     background-image: url(../img/how-we-work-1_320.jpg);
   }
 
@@ -484,9 +484,15 @@
   }
 
   .article__descr {
-    margin-bottom: 16px;
+    padding-bottom: 56px;
     font-size: 14px;
     line-height: 28px;
+  }
+
+  .article__btn-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 290px;
   }
 
   .article__btn-wide {
@@ -494,11 +500,10 @@
   }
 
   .article__btn:not(:last-child) {
-    margin-right: 3.3%;
+    margin-right: 0px;
   }
 
   .article__btn-white {
-    margin-left: -4px;
     padding: 10px 31px 13px 32px;
   }
 

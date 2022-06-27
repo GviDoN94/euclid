@@ -30,7 +30,6 @@ html {
     url(../fonts/MontserratRegular.woff) format('woff');
     font-weight: 400;
     font-style: normal;
-    font-display: swap;
 }
 
  @font-face {
@@ -40,7 +39,6 @@ html {
     url(../fonts/MontserratMedium.woff) format('woff');
     font-weight: 500;
     font-style: normal;
-    font-display: swap;
 }
 
 @font-face {
@@ -49,8 +47,7 @@ html {
   url(../fonts/MontserratSemiBold.woff2) format('woff2'),
   url(../fonts/MontserratSemiBold.woff) format('woff');
   font-weight: 600;
-  font-style: normal;
-  font-display: swap;
+  font-style: normal
 }
 
 @font-face {
@@ -60,7 +57,6 @@ html {
     url(../fonts/MontserratBold.woff) format('woff');
     font-weight: 700;
     font-style: normal;
-    font-display: swap;
 }
 
 @font-face {
@@ -70,15 +66,13 @@ html {
     url(../fonts/MontserratExtraBold.woff) format('woff');
     font-weight: 800;
     font-style: normal;
-    font-display: swap;
 }
 
 body {
   min-width: 320px;
   background-color: var(--white);
   font-family: 'Montserrat', 'sans-serif';
-  font-weight: 400;
-  font-display: swap;
+  font-weight: 400
 }
 
 /* global styles */
@@ -142,7 +136,7 @@ color: var(--text);
 .header {
   position: relative;
   z-index: 1;
-  padding: 16px 0px 10px;
+  padding: 14px 0px 10px;
   box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 25%);;
 }
 
@@ -447,12 +441,19 @@ color: var(--text);
 }
 
 .article {
-display: flex;
-justify-content: space-between;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
 }
 
 .article__left {
+  display: none;
   width: calc((100% - 32px) / 2);
+  min-height: 470px;
+}
+
+.article__left-active {
+  display: block;
 }
 
 .article__title {
@@ -467,10 +468,16 @@ justify-content: space-between;
 .article__descr {
   max-width: 758px;
   margin: 0;
-  margin-bottom: 49px;
+  padding-bottom: 70px;
   font-size: 16px;
   line-height: 32px;
   color: var(--text);
+}
+
+.article__btn-wrap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .article__btn:not(:last-child) {
@@ -501,6 +508,7 @@ justify-content: space-between;
 
 .article__right {
   position: relative;
+  display: none;
   width: calc((100% - 32px) / 2);
 }
 
@@ -511,10 +519,29 @@ justify-content: space-between;
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: url('../img/how-we-work-1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.article__right-first::before {
+  background-image: url('../img/how-we-work-1.jpg');
+}
+
+.article__right-second::before {
+  background-image: url('../img/how-we-work-2.jpg');
+}
+
+.article__right-third::before {
+  background-image: url('../img/how-we-work-3.jpg');
+}
+
+.article__right-fourth::before {
+  background-image: url('../img/how-we-work-4.jpg');
+}
+
+.article__right-active {
+  display: block;
 }
 
 /* faq */
