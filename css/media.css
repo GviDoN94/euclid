@@ -72,6 +72,10 @@
     display: none;
   }
 
+  .search__input {
+    width: 300px;
+  }
+
   /*hero*/
   .hero__wrapper{
     padding: 160px 77px 25px;
@@ -197,6 +201,9 @@
   /* header */
   .header {
     padding: 8px 0 9px
+  }
+  .search__input {
+    width: 200px;
   }
 
   /* hero */
@@ -340,6 +347,23 @@
   .header__logo {
     width: 110px;
   }
+
+  .search__form {
+    padding: 18px 10px;
+  }
+
+  .search__input {
+    margin-right: 10px;
+    width: 165px;
+  }
+
+  .search__input::placeholder {
+    font-size: 14px;
+  }
+
+  .search__form-btn {
+    margin-right: 10px;
+}
 
   /* hero */
   .hero__wrapper {
