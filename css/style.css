@@ -11,6 +11,9 @@
   --dark-grey: #666666;
   --black: #000000;
   --accordion-circle: #ECECEC;
+  --border-input-search: #DCDCDC;
+  --placeholder-search: #ADADAD;
+  --closed-search: #999999;
 }
 
 html {
@@ -203,32 +206,92 @@ color: var(--text);
 }
 
 .search {
+  position: relative;
+}
+
+.btn-search {
   outline: 2px solid transparent;
-  outline-offset: 4px;
+  outline-offset: 2px;
   font-size: 0;
   transition: outline-color .3s ease-in-out;
 }
 
-.search__svg {
+.btn-search__svg {
   stroke: var(--text);
   transition: stroke .3s ease-in-out;
 }
 
-.search__svg rect {
+.btn-search__svg rect {
   fill: var(--text);
   transition: fill .3s ease-in-out;
 }
 
-.search:focus-visible {
+.btn-search:focus-visible {
   outline-color: var(--orange);
 }
 
-.search__svg:active:not(:focus-visible) {
+.btn-search .btn-search__svg:active:not(:focus-visible) {
   stroke: var(--orange);
 }
-.search__svg:active:not(:focus-visible) rect {
+.btn-search .btn-search__svg:active:not(:focus-visible) rect {
   fill: var(--orange);
 }
+
+.search__form {
+  /* position: absolute; */
+  display: flex;
+  padding: 18px 32px;
+  padding-right: 13px;
+  border-radius: 16px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
+}
+
+.search__input {
+  width: 412px;
+  margin-right: 14px;
+  padding: 0;
+  padding-bottom: 3px;
+  border: none;
+  border-bottom: 1px solid var(--border-input-search);
+  outline: none;
+}
+
+.search__input::placeholder {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--placeholder-search);
+}
+
+.search__form-btn {
+  margin-right: 20px;
+}
+.btn-close-search {
+  display: flex;
+}
+
+.btn-close-search:focus-visible {
+  outline-color: var(--orange);
+}
+
+.btn-close-search__svg circle {
+  stroke: var(--closed-search);
+  transition: stroke .3s ease-in-out;
+}
+
+.btn-close-search__svg rect {
+  fill: var(--closed-search);
+  transition: fill .3s ease-in-out;
+}
+
+.btn-close-search .btn-close-search__svg:active:not(:focus-visible) circle {
+  stroke: var(--text);
+}
+
+.btn-close-search .btn-close-search__svg:active:not(:focus-visible) rect {
+  fill: var(--text);
+}
+
 
 /* hero */
 .hero__wrapper {
@@ -842,11 +905,18 @@ footer {
     transform: scale(1);
   }
 
-  .search__svg:hover:not(:focus-visible) {
+  .btn-search__svg:hover:not(:focus-visible) {
     stroke: var(--orange);
   }
 
-  .search__svg:hover:not(:focus-visible) rect {
+  .btn-search__svg:hover:not(:focus-visible) rect {
+    fill: var(--orange);
+  }
+
+  .btn-close-search__svg:hover:not(:focus-visible) circle {
+    stroke: var(--orange);
+  }
+  .btn-close-search__svg:hover:not(:focus-visible) rect {
     fill: var(--orange);
   }
 
