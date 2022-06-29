@@ -17,6 +17,16 @@ btnSearchClose.addEventListener("click", () => {
   searchForm.classList.remove("search__form_active");
 });
 
+const swiper = new Swiper('.hero__swiper', {
+  direction: 'horizontal',
+  loop: true,
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: 'true',
+  },
+});
+
 document.querySelector(".tabs").addEventListener("click", (event) => {
   const activeBtn = event.target;
   const activeBtnAttrDataset = event.target.dataset.path;
