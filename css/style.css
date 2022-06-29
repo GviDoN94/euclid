@@ -138,7 +138,6 @@ color: var(--text);
 /* header */
 .header {
   position: relative;
-  z-index: 1;
   padding: 14px 0px 10px;
   box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 25%);;
 }
@@ -146,6 +145,7 @@ color: var(--text);
 .header__wrapper {
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 
 .header__logo-link {
@@ -213,7 +213,11 @@ color: var(--text);
   outline: 2px solid transparent;
   outline-offset: 2px;
   font-size: 0;
-  transition: outline-color .3s ease-in-out;
+  transition: outline-color .3s ease-in-out, opacity .3s ease-in-out;
+}
+
+.btn-search-open_active {
+  opacity: 0;
 }
 
 .btn-search__svg {
@@ -238,12 +242,27 @@ color: var(--text);
 }
 
 .search__form {
-  /* position: absolute; */
+  position: absolute;
+  top: -65%;
+  right: 0;
   display: flex;
   padding: 18px 32px;
   padding-right: 13px;
+  width: 539px;
   border-radius: 16px;
+  background-color: var(--white);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(150%);
+  transition: transformX .3s ease-in-out, opacity .3s ease-in-out .2s,
+  visibility .3s ease-in-out .2s;
+}
+
+.search__form_active {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
 }
 
 .search__input {
