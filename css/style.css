@@ -252,12 +252,12 @@ color: var(--text);
   visibility: hidden;
   opacity: 0;
   transform: translateX(150%);
-  transition: transformX .3s ease-in-out, opacity .3s ease-in-out .2s,
+  transition: opacity .3s ease-in-out .2s,
   visibility .3s ease-in-out .2s;
 }
 
 .search-form_active {
-  transform: translateX(0);
+  transform: none;
   opacity: 1;
   visibility: visible;
 }
