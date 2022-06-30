@@ -105,7 +105,7 @@ body {
 }
 
 .section:first-child {
-  padding-top: 0;
+  padding-top: 100px;
 }
 
 .section__title {
@@ -138,11 +138,11 @@ color: var(--text);
 }
 
 /* header */
-.header {
+.header__top {
   position: relative;
   z-index: 10;
-  padding: 14px 0px 10px;
-  box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 25%);;
+  padding: 14px 0 10px;
+  box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 25%);
 }
 
 .header__wrapper {
@@ -242,8 +242,8 @@ color: var(--text);
 
 .search-form {
   position: absolute;
-  top: 11%;
-  right: 35px;
+  top: 8px;
+  right: 36px;
   display: flex;
   padding: 18px 32px;
   padding-right: 13px;
@@ -318,6 +318,10 @@ color: var(--text);
 }
 
 /* hero */
+.hero.section {
+  padding: 0;
+}
+
 .hero__wrapper {
   position: relative;
   z-index: 1;
