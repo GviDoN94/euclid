@@ -1,7 +1,7 @@
 "use strict";
-const btnSearchOpen = document.querySelector(".btn-search-open");
+const btnSearchOpen = document.querySelector(".btn-open-search");
 const btnSearchClose = document.querySelector(".btn-close-search");
-const searchForm = document.querySelector(".search__form");
+const searchForm = document.querySelector(".search-form");
 
 const tabEls = document.querySelectorAll(".tabs__button");
 const articleLeftEls = document.querySelectorAll(".article__left");
@@ -26,13 +26,13 @@ const swiper = new Swiper('.hero-swiper', {
 });
 
 btnSearchOpen.addEventListener("click", () => {
-  btnSearchOpen.classList.add("btn-search-open_active");
-  searchForm.classList.add("search__form_active");
+  btnSearchOpen.classList.add("btn-open-search_active");
+  searchForm.classList.add("search-form_active");
 });
 
 btnSearchClose.addEventListener("click", () => {
-  btnSearchOpen.classList.remove("btn-search-open_active");
-  searchForm.classList.remove("search__form_active");
+  btnSearchOpen.classList.remove("btn-open-search_active");
+  searchForm.classList.remove("search-form_active");
 });
 
 document.querySelector(".tabs").addEventListener("click", (event) => {
