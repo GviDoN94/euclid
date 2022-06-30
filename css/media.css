@@ -78,7 +78,7 @@
 
   /*hero*/
   .hero__wrapper{
-    padding: 160px 77px 25px;
+    padding: 160px 77px 161px;
   }
   .hero__title {
     margin-bottom: 16px;
@@ -90,11 +90,8 @@
     font-size: 20px;
     line-height: 24px;
   }
-  .hero__button {
-    margin-bottom: 116px;
-  }
 
-  .swiper__first-slide {
+  .hero-swiper__first-slide {
     background-image: url('../img/hero-bg-1-photo-of-balconies_1024.jpg');
   }
 
@@ -211,7 +208,7 @@
 
   /* hero */
   .hero__wrapper {
-    padding: 160px 40px 25px;
+    padding: 160px 40px 161px;
   }
 
   .hero__title {
@@ -224,7 +221,7 @@
     line-height: 22px;
   }
 
-  .swiper__first-slide {
+  .hero-swiper__first-slide {
     background-image: url('../img/hero-bg-1-photo-of-balconies_768.jpg');
   }
 
@@ -373,7 +370,7 @@
 
   /* hero */
   .hero__wrapper {
-    padding: 60px 22px 11px;
+    padding: 60px 22px;
     text-align: center;
   }
 
@@ -391,17 +388,26 @@
 
   .hero__button {
     align-self: center;
-    margin-bottom: 31px;
   }
 
-  .swiper__first-slide {
+  .hero-swiper__first-slide {
     background-image: url('../img/hero-bg-1-photo-of-balconies_320.jpg');
   }
 
-  .swiper-circle__circle {
-    width: 10px;
-    height: 10px;
-  }
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+ bottom: 10px;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal
+.swiper-pagination-bullets
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+}
 
   /* about us */
   .about-us__title {

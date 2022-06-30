@@ -319,7 +319,7 @@ color: var(--text);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 101px 80px 25px;
+  padding: 101px 80px 100px;
 }
 
 .hero__title {
@@ -343,13 +343,12 @@ color: var(--text);
 }
 
 .hero__button {
-  margin-bottom: 55px;
   padding: 24px 38px;
   font-size: 23.4581px;
   line-height: 29px;
 }
 
-.hero__swiper {
+.hero-swiper {
   position: absolute;
   z-index: -1;
   top: 0;
@@ -364,34 +363,41 @@ color: var(--text);
   background-position: center;
 }
 
-.swiper__first-slide {
+.hero-swiper__first-slide {
   background-image: url('../img/hero-bg-1-photo-of-balconies.jpg');
 }
 
-.swiper__second-slide {
+.hero-swiper__second-slide {
   background-image: url('../img/hero-bg-2-brown-and-blue-glass-building.jpg');
 }
 
-.swiper__third-slide {
+.hero-swiper__third-slide {
   background-image: url('../img/hero-bg-3-apartment-apartment-building-architecture-building.jpg');
 }
 
-.swiper-circle{
-  display: flex;
-  align-self: center;
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+ bottom: 26px;
 }
 
-.swiper-circle__item:not(:last-child) {
-  margin-right: 20px;
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal
+.swiper-pagination-bullets
+.swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap,10px);
+  width: 15px;
+  height: 15px;
 }
 
-.swiper-circle__circle {
-  fill: var(--white);
-  fill-opacity: 0.4;
+.swiper-pagination-bullet {
+  background-color: var(--white);
+  opacity: 0.4;
 }
 
-.swiper-circle__circle_white {
-  fill-opacity: 1;
+.swiper-pagination-bullet-active {
+  opacity: 1;
 }
 
 /* about us */

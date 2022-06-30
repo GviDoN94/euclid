@@ -7,6 +7,24 @@ const tabEls = document.querySelectorAll(".tabs__button");
 const articleLeftEls = document.querySelectorAll(".article__left");
 const articleRightEls = document.querySelectorAll(".article__right");
 
+const swiper = new Swiper('.hero-swiper', {
+  direction: 'horizontal',
+  loop: true,
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  },
+
+  effect: 'fade',
+});
+
 btnSearchOpen.addEventListener("click", () => {
   btnSearchOpen.classList.add("btn-search-open_active");
   searchForm.classList.add("search__form_active");
@@ -15,16 +33,6 @@ btnSearchOpen.addEventListener("click", () => {
 btnSearchClose.addEventListener("click", () => {
   btnSearchOpen.classList.remove("btn-search-open_active");
   searchForm.classList.remove("search__form_active");
-});
-
-const swiper = new Swiper('.hero__swiper', {
-  direction: 'horizontal',
-  loop: true,
-
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: 'true',
-  },
 });
 
 document.querySelector(".tabs").addEventListener("click", (event) => {
