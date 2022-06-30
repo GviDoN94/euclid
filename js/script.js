@@ -63,3 +63,11 @@ document.querySelector(".tabs").addEventListener("click", (event) => {
     }
   });
 });
+
+const burgerBtn = document.querySelector('.burger');
+const headerNav = document.querySelector('.header__nav');
+
+burgerBtn.addEventListener('click', () => {
+  burgerBtn.classList.toggle('burger_active');
+  headerNav.classList.toggle('header__nav_active');
+})

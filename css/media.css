@@ -21,11 +21,20 @@
     padding: 24px 0;
   }
   .header__wrapper {
+    position: static;
     justify-content: space-between;
   }
+
+  .header__logo-link {
+    margin: 0;
+  }
+  .header__logo {
+   width: 150px;
+   margin-right: 0;
+  }
+
   .burger {
     position: relative;
-    z-index: 1000;
     width: 30px;
     height: 23px;
     margin-top: -2px;
@@ -41,7 +50,9 @@
     height: 3px;
     background-color: var(--text);
     transform: translateX(-50%);
-    transition: background-color .3s ease-in;
+    transition-property: background-color, transform, top, left;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
   }
   .burger__line:nth-child(3) {
     top: 0;
@@ -59,8 +70,9 @@
   .burger:active:not(:focus-visible) .burger__line {
     background-color: var(--dark-orange);
   }
-  .burger:active:not(:focus-visible) .burger__line {
-    background-color: var(--dark-orange);
+
+  .burger_active {
+    z-index: 1000;
   }
 
   .burger_active
@@ -71,28 +83,18 @@
   .burger_active
   .burger__line:nth-child(1) {
     top: 50%;
-    left: 25%;
-    transform: rotate(45deg);
+    left: 0%;
+    transform: rotate(-45deg);
     transform-origin: center;
-    transition: transform .3s ease-in-out left .3s ease-in-out;
   }
 
   .burger_active
   .burger__line:nth-child(3) {
     top: 50%;
     bottom: auto;
-    left: 25%;
-    transform: rotate(-45deg);
+    left: 0;
+    transform: rotate(45deg);
     transform-origin: center;
-    transition: transform .3s ease-in-out left .3s ease-in-out;
-  }
-
-  .header__logo-link {
-    margin: 0;
-  }
-  .header__logo {
-   width: 150px;
-   margin-right: 0;
   }
 
   .header__nav {
@@ -100,7 +102,6 @@
     top: 0;
     left: 0;
     z-index: 100;
-    /* display: none; */
     margin: 0;
     padding: 162px 50px;
     width: 420px;
@@ -110,14 +111,12 @@
     overflow-y: auto;
     visibility: hidden;
     transform: translateX(-150%);
-    opacity: 0;
-    transition: visibility .3s ease-in-out, transform .3s ease-in-out opacity .3s ease-in-out;
+    transition: visibility .3s ease-in-out, transform .3s ease-in-out;
   }
 
   .header__nav_active {
     visibility: visible;
     transform: translateX(0);
-    opacity: 1;
   }
 
   .header__nav .nav__list {
@@ -126,13 +125,17 @@
 
   .header__nav .nav__item:not(:last-child) {
     margin: 0;
-    margin-bottom: 60px;
+    margin-bottom: 61px;
   }
 
   .header__nav .nav__link {
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
+  }
+
+  .search-form {
+    top: 20%;
   }
 
   /*hero*/
