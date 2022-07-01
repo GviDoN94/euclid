@@ -23,11 +23,13 @@
   /*header*/
   .header {
     position: relative;
+    overflow: hidden;
   }
 
   .header__top {
     position: static;
     padding: 24px 0;
+    overflow: visible;
   }
 
   .header__wrapper {
@@ -146,6 +148,8 @@
 
   .search-form {
     top: 20px;
+    opacity: 1;
+    transition: transform .3s ease-in-out, visibility .3s ease-in-out;
   }
 
   /*hero*/

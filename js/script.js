@@ -78,4 +78,5 @@ new Accordion('.accordion', {
   triggerClass: 'accordion__btn',
   panelClass: 'accordion__content',
   activeClass: 'accordion__item_active',
+  showMultiple: true,
 });
