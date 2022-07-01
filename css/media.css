@@ -226,7 +226,7 @@
     margin-bottom: 32px;
   }
 
-  .accordion__descr {
+  .accordion__title {
     max-width: 756px;
     padding: 0;
     font-size: 20px;
@@ -363,7 +363,7 @@
     margin-bottom: 31px;
   }
 
-  .accordion__descr {
+  .accordion__title {
     max-width: 570px;
   }
 
@@ -655,7 +655,7 @@
     margin-bottom: 16px;
   }
 
-  .accordion__descr {
+  .accordion__title {
     max-width: 243px;
     font-weight: 500;
     font-size: 14px;

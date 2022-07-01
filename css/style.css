@@ -693,7 +693,9 @@ color: var(--text);
   transition: border-color 0.3s ease-in-out;
 }
 
-.accordion__descr {
+.accordion__title {
+  margin: 0;
+  margin-right: 30px;
   padding-top: 3px;
   text-align: left;
   font-weight: 700;
@@ -703,7 +705,7 @@ color: var(--text);
   transition: color .3s ease-in-out;
 }
 
-.accordion__descr_grey {
+.accordion__title_grey {
   color: var(--grey);
   transition: color .3s ease-in-out;
 }
@@ -725,11 +727,11 @@ color: var(--text);
   z-index: 1;
 }
 
-.accordion__btn:focus-visible .accordion__descr {
+.accordion__btn:focus-visible .accordion__title {
   color: var(--orange);
 }
 
-.accordion__btn:focus-visible .accordion__descr_grey {
+.accordion__btn:focus-visible .accordion__title_grey {
   color: var(--orange);
 }
 
@@ -745,11 +747,11 @@ color: var(--text);
   border-color: var(--grey);
 }
 
-.accordion__btn:active:not(:focus-visible) .accordion__descr {
+.accordion__btn:active:not(:focus-visible) .accordion__title {
   color: var(--text);
 }
 
-.accordion__btn:active:not(:focus-visible) .accordion__descr_grey {
+.accordion__btn:active:not(:focus-visible) .accordion__title_grey {
   color: var(--grey);
 }
 
@@ -760,6 +762,41 @@ color: var(--text);
 
 .accordion__btn:active:not(:focus-visible) .accordion__cros {
   fill: var(--dark-grey);
+}
+
+.accordion__content {
+  padding-bottom: 40px;
+  overflow: hidden;
+  visibility: hidden;
+  transition-property: height, visivility;
+  transition-timing-function: ease;
+}
+
+.accordion__descr {
+  margin: 0;
+  max-width: 1003px;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--text);
+}
+
+.accordion__descr:first-child {
+  margin-bottom: 32px;
+}
+
+.accordion__item_active
+.accordion__btn {
+  border-bottom: none;
+}
+
+.accordion__item_active
+.accordion__svg {
+  transform: rotate(45deg);
+}
+
+.accordion__item_active
+.accordion__content {
+  visibility: visible;
 }
 
 /* footer */
@@ -998,11 +1035,11 @@ footer {
     z-index: 1;
   }
 
-  .accordion__btn:hover:not(:focus-visible) .accordion__descr {
+  .accordion__btn:hover:not(:focus-visible) .accordion__title {
     color: var(--orange);
   }
 
-  .accordion__btn:hover:not(:focus-visible) .accordion__descr_grey {
+  .accordion__btn:hover:not(:focus-visible) .accordion__title_grey {
     color: var(--orange);
   }
 

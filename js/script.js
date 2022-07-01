@@ -1,4 +1,8 @@
 "use strict";
+
+const burgerBtn = document.querySelector(".burger");
+const headerNav = document.querySelector(".header__nav");
+
 const btnSearchOpen = document.querySelector(".btn-open-search");
 const btnSearchClose = document.querySelector(".btn-close-search");
 const searchForm = document.querySelector(".search-form");
@@ -7,22 +11,9 @@ const tabEls = document.querySelectorAll(".tabs__button");
 const articleLeftEls = document.querySelectorAll(".article__left");
 const articleRightEls = document.querySelectorAll(".article__right");
 
-const swiper = new Swiper('.hero-swiper', {
-  direction: 'horizontal',
-  loop: true,
-
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-
-  autoplay: {
-    delay: 5000,
-    disableOnInteraction: false,
-    pauseOnMouseEnter: true,
-  },
-
-  effect: 'fade',
+burgerBtn.addEventListener("click", () => {
+  burgerBtn.classList.toggle("burger_active");
+  headerNav.classList.toggle("header__nav_active");
 });
 
 btnSearchOpen.addEventListener("click", () => {
@@ -64,10 +55,27 @@ document.querySelector(".tabs").addEventListener("click", (event) => {
   });
 });
 
-const burgerBtn = document.querySelector('.burger');
-const headerNav = document.querySelector('.header__nav');
+new Swiper('.hero-swiper', {
+  direction: 'horizontal',
+  loop: true,
 
-burgerBtn.addEventListener('click', () => {
-  burgerBtn.classList.toggle('burger_active');
-  headerNav.classList.toggle('header__nav_active');
-})
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  },
+
+  effect: 'fade',
+});
+
+new Accordion('.accordion', {
+  elementClass: 'accordion__item',
+  triggerClass: 'accordion__btn',
+  panelClass: 'accordion__content',
+  activeClass: 'accordion__item_active',
+});
