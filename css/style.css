@@ -766,7 +766,6 @@ color: var(--text);
 }
 
 .accordion__content {
-  padding-bottom: 40px;
   overflow: hidden;
   visibility: hidden;
   transition-property: height, visivility;
@@ -785,6 +784,10 @@ color: var(--text);
   margin-bottom: 32px;
 }
 
+.accordion__item_active.accordion__item {
+  padding-bottom: 40px;
+}
+
 .accordion__item_active
 .accordion__btn {
   border-bottom: none;
@@ -799,6 +802,7 @@ color: var(--text);
 .accordion__content {
   visibility: visible;
 }
+
 
 /* footer */
 footer {
@@ -831,7 +835,6 @@ footer {
 
 .nav__item_not-margin:not(:last-child) {
   margin: 0;
-
 }
 
 .nav__link_grey {
