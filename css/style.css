@@ -996,6 +996,14 @@ footer {
   background-repeat: no-repeat;
 }
 
+.checkbox__input:focus-visible+.checkbox__text::before {
+  border-color: var(--orange);
+}
+
+.checkbox__input:focus-visible+.checkbox__text {
+  color: var(--orange);
+}
+
 .checkbox__input:checked+.checkbox__text::before {
   background-image: url('../img/check.svg');
 }
