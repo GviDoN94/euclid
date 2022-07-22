@@ -14,6 +14,12 @@ const articleRightEls = document.querySelectorAll(".article__right");
 burgerBtn.addEventListener("click", () => {
   burgerBtn.classList.toggle("burger_active");
   headerNav.classList.toggle("header__nav_active");
+
+  if (burgerBtn.classList.contains("burger_active")) {
+    burgerBtn.ariaLabel = "закрыть меню навигации";
+  } else {
+    burgerBtn.ariaLabel = "открыть меню навигации";
+  }
 });
 
 btnSearchOpen.addEventListener("click", () => {
@@ -55,12 +61,12 @@ document.querySelector(".tabs").addEventListener("click", (event) => {
   });
 });
 
-new Swiper('.hero-swiper', {
-  direction: 'horizontal',
+new Swiper(".hero-swiper", {
+  direction: "horizontal",
   loop: true,
 
   pagination: {
-    el: '.swiper-pagination',
+    el: ".swiper-pagination",
     clickable: true,
   },
 
@@ -70,13 +76,21 @@ new Swiper('.hero-swiper', {
     pauseOnMouseEnter: true,
   },
 
-  effect: 'fade',
+  effect: "fade",
+
+  a11y: {
+    firstSlideMessage: "Это первый слайд",
+    lastSlideMessage: "Это последний слайд",
+    nextSlideMessage: "Следующий слайд",
+    prevSlideMessage: "Предыдущий слайд",
+    paginationBulletMessage: "Перейти на слайд {{index}}",
+  },
 });
 
-new Accordion('.accordion', {
-  elementClass: 'accordion__item',
-  triggerClass: 'accordion__btn',
-  panelClass: 'accordion__content',
-  activeClass: 'accordion__item_active',
+new Accordion(".accordion", {
+  elementClass: "accordion__item",
+  triggerClass: "accordion__btn",
+  panelClass: "accordion__content",
+  activeClass: "accordion__item_active",
   showMultiple: true,
 });

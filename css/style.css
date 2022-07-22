@@ -150,6 +150,10 @@ color: var(--text);
   align-items: center;
 }
 
+.burger {
+  display: none;
+}
+
 .header__logo-link {
   position: relative;
   margin-right: auto;
@@ -313,6 +317,9 @@ color: var(--text);
 
 .btn-close-search {
   display: flex;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  transition: outline-color .3s ease-in-out, opacity .3s ease-in-out;
 }
 
 .btn-close-search:focus-visible {
