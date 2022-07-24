@@ -964,6 +964,7 @@ footer {
 }
 
 .social__link {
+  display: inline-block;
   outline: 2px solid transparent;
   outline-offset: 5px;
   transition: outline .3s ease-in-out;
@@ -1034,6 +1035,11 @@ footer {
 .form__input:focus-visible,
 .form__textarea:focus-visible {
   background-color: var(--dark-grey);
+}
+
+::-moz-placeholder,
+:-moz-placeholder {
+  opacity: 1;
 }
 
 .form__input::placeholder, .form__textarea::placeholder {
