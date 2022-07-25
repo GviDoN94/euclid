@@ -376,6 +376,7 @@ color: var(--text);
   padding-bottom: 3px;
   border: none;
   border-bottom: 1px solid var(--border-input-search);
+  border-radius: 0;
   outline: none;
 }
 
@@ -514,6 +515,12 @@ color: var(--text);
 .swiper-pagination-bullet {
   background-color: var(--white);
   opacity: 0.4;
+}
+
+.swiper-pagination-bullet:focus-visible {
+  outline: none;
+  outline: solid 1px var(--white);
+  outline-offset: 2px;
 }
 
 .swiper-pagination-bullet-active {
@@ -1013,6 +1020,7 @@ footer {
   margin-bottom: 25px;
   padding: 16px 24px 12px;
   border: none;
+  border-radius: 0;
   outline: none;
   background-color: var(--input-bg);
   color: var(--white);
