@@ -153,6 +153,10 @@
     transition: transform .3s ease-in-out, visibility .3s ease-in-out;
   }
 
+  .stop-scroll {
+    overflow: hidden;
+  }
+
   /*hero*/
   .hero__wrapper{
     padding: 160px 77px 161px;

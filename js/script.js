@@ -2,18 +2,12 @@
 
 const burgerBtn = document.querySelector(".burger");
 const headerNav = document.querySelector(".header__nav");
-
-const btnSearchOpen = document.querySelector(".btn-open-search");
-const btnSearchClose = document.querySelector(".btn-close-search");
-const searchForm = document.querySelector(".search-form");
-
-const tabEls = document.querySelectorAll(".tabs__button");
-const articleLeftEls = document.querySelectorAll(".article__left");
-const articleRightEls = document.querySelectorAll(".article__right");
+const bodyEl = document.body;
 
 burgerBtn.addEventListener("click", () => {
   burgerBtn.classList.toggle("burger_active");
   headerNav.classList.toggle("header__nav_active");
+  bodyEl.classList.toggle("stop-scroll");
 
   if (burgerBtn.classList.contains("burger_active")) {
     burgerBtn.ariaLabel = "закрыть меню навигации";
@@ -21,6 +15,26 @@ burgerBtn.addEventListener("click", () => {
     burgerBtn.ariaLabel = "открыть меню навигации";
   }
 });
+
+headerNav.addEventListener("click", (event) => {
+  if (!event.target.classList.contains("nav__link")) {
+    return;
+  }
+
+  burgerBtn.classList.remove("burger_active");
+  headerNav.classList.remove("header__nav_active");
+  bodyEl.classList.remove("stop-scroll");
+
+  if (burgerBtn.classList.contains("burger_active")) {
+    burgerBtn.ariaLabel = "закрыть меню навигации";
+  } else {
+    burgerBtn.ariaLabel = "открыть меню навигации";
+  }
+});
+
+const btnSearchOpen = document.querySelector(".btn-open-search");
+const btnSearchClose = document.querySelector(".btn-close-search");
+const searchForm = document.querySelector(".search-form");
 
 btnSearchOpen.addEventListener("click", () => {
   btnSearchOpen.classList.add("btn-open-search_active");
@@ -31,6 +45,10 @@ btnSearchClose.addEventListener("click", () => {
   btnSearchOpen.classList.remove("btn-open-search_active");
   searchForm.classList.remove("search-form_active");
 });
+
+const tabEls = document.querySelectorAll(".tabs__button");
+const articleLeftEls = document.querySelectorAll(".article__left");
+const articleRightEls = document.querySelectorAll(".article__right");
 
 document.querySelector(".tabs").addEventListener("click", (event) => {
   const activeBtn = event.target;
