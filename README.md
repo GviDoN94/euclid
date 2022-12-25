@@ -1,1 +1,1 @@
-# Euclid is [there](https://gvidon94.github.io/euclid/)
+# Euclid is [here](https://euclid.vladislavsurin.ru/)
