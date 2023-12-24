@@ -1,1 +1,1 @@
-# Euclid is [here](https://euclid.vladislavsurin.ru/)
+# Euclid is [here](https://euclid.gvidon94.ru/)
