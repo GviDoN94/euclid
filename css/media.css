@@ -1,7 +1,7 @@
 :root {
-  --white: #FFFFFF;
-  --orange: #FF9900;
-  --dark-orange: #E1670E;
+  --white: #ffffff;
+  --orange: #ff9900;
+  --dark-orange: #e1670e;
   --text: #333333;
   --footer-border: #595959;
 }
@@ -41,8 +41,8 @@
     margin: 0;
   }
   .header__logo {
-   width: 150px;
-   margin-right: 0;
+    width: 150px;
+    margin-right: 0;
   }
 
   .burger {
@@ -54,7 +54,7 @@
     margin-right: -8px;
     outline-offset: 5px;
     outline: 2px solid transparent;
-    transition: outline-color .3s ease-in-out;
+    transition: outline-color 0.3s ease-in-out;
   }
   .burger__line {
     position: absolute;
@@ -64,7 +64,7 @@
     background-color: var(--text);
     transform: translateX(-50%);
     transition-property: background-color, transform, top, left;
-    transition-duration: .3s;
+    transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
   }
   .burger__line:nth-child(3) {
@@ -88,21 +88,18 @@
     z-index: 1000;
   }
 
-  .burger_active
-  .burger__line:nth-child(2) {
+  .burger_active .burger__line:nth-child(2) {
     opacity: 0;
   }
 
-  .burger_active
-  .burger__line:nth-child(1) {
+  .burger_active .burger__line:nth-child(1) {
     top: 50%;
     left: 0%;
     transform: rotate(-45deg);
     transform-origin: center;
   }
 
-  .burger_active
-  .burger__line:nth-child(3) {
+  .burger_active .burger__line:nth-child(3) {
     top: 50%;
     bottom: auto;
     left: 0;
@@ -124,7 +121,7 @@
     overflow-y: auto;
     visibility: hidden;
     transform: translateX(-150%);
-    transition: visibility .3s ease-in-out, transform .3s ease-in-out;
+    transition: visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
   }
 
   .header__nav_active {
@@ -150,7 +147,7 @@
   .search-form {
     top: 20px;
     opacity: 1;
-    transition: transform .3s ease-in-out, visibility .3s ease-in-out;
+    transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
   }
 
   .stop-scroll {
@@ -158,7 +155,7 @@
   }
 
   /*hero*/
-  .hero__wrapper{
+  .hero__wrapper {
     padding: 160px 77px 161px;
   }
   .hero__title {
@@ -173,7 +170,7 @@
   }
 
   .hero-swiper__first-slide {
-    background-image: url('../img/hero-bg-1-photo-of-balconies_1024.jpg');
+    background-image: url("../img/hero-bg-1-photo-of-balconies_1024.jpg");
   }
 
   /* about us */
@@ -186,13 +183,14 @@
   .block-cards {
     flex-direction: column;
   }
-  .card-hero, .block-cards__right-wrapper  {
+  .card-hero,
+  .block-cards__right-wrapper {
     width: 100%;
   }
   .card-hero {
     min-height: 640px;
     margin-bottom: 32px;
-    background-image: url('../img/about-us-worker_1024.jpg');
+    background-image: url("../img/about-us-worker_1024.jpg");
   }
   .card-hero__wrapper {
     padding: 5.4% 5.4%;
@@ -213,7 +211,8 @@
     margin-bottom: 52px;
   }
 
-  .article__left, .article__right {
+  .article__left,
+  .article__right {
     width: calc((100% - 49px) / 2);
   }
 
@@ -223,7 +222,7 @@
 
   .article__right-first::before {
     top: 11px;
-    background-image: url('../img/how-we-work-1_1024.jpg');
+    background-image: url("../img/how-we-work-1_1024.jpg");
   }
 
   /* faq */
@@ -243,7 +242,7 @@
 
   /* footer */
   .footer__wrapper {
-    padding: 49px 48px 46px
+    padding: 49px 48px 46px;
   }
 
   .footer__left {
@@ -281,7 +280,7 @@
 @media (max-width: 992px) {
   /* header */
   .header__top {
-    padding: 8px 0 9px
+    padding: 8px 0 9px;
   }
 
   .header__nav {
@@ -310,7 +309,7 @@
   }
 
   .hero-swiper__first-slide {
-    background-image: url('../img/hero-bg-1-photo-of-balconies_768.jpg');
+    background-image: url("../img/hero-bg-1-photo-of-balconies_768.jpg");
   }
 
   /* about us */
@@ -320,7 +319,7 @@
 
   .card-hero {
     min-height: 650px;
-    background-image: url('../img/about-us-worker_768.jpg');
+    background-image: url("../img/about-us-worker_768.jpg");
   }
 
   .card-hero__wrapper {
@@ -364,7 +363,7 @@
   }
 
   .article__right-first::before {
-    background-image: url('../img/how-we-work-1_768.jpg');
+    background-image: url("../img/how-we-work-1_768.jpg");
   }
 
   /* faq */
@@ -448,13 +447,11 @@
     width: 100%;
   }
 
-  .header__nav
-  .nav__item:not(:last-child) {
+  .header__nav .nav__item:not(:last-child) {
     margin-bottom: 32px;
   }
 
-  .header__nav
-  .nav__link {
+  .header__nav .nav__link {
     font-size: 16px;
     line-height: 20px;
   }
@@ -500,23 +497,23 @@
   }
 
   .hero-swiper__first-slide {
-    background-image: url('../img/hero-bg-1-photo-of-balconies_320.jpg');
+    background-image: url("../img/hero-bg-1-photo-of-balconies_320.jpg");
   }
 
-.swiper-horizontal>.swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal,
-.swiper-pagination-custom,
-.swiper-pagination-fraction {
- bottom: 10px;
-}
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 10px;
+  }
 
-.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
-.swiper-pagination-horizontal
-.swiper-pagination-bullets
-.swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
-}
+  .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-pagination-horizontal
+    .swiper-pagination-bullets
+    .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+  }
 
   /* about us */
   .about-us__title {
@@ -533,7 +530,7 @@
     position: relative;
     min-height: 200px;
     margin-bottom: 210px;
-    background-image: url('../img/about-us-worker_320.jpg');
+    background-image: url("../img/about-us-worker_320.jpg");
   }
 
   .card-hero__wrapper {
@@ -583,11 +580,11 @@
   }
 
   .card-first {
-    background-image: url('../img/about-us-img-1_320.svg');
+    background-image: url("../img/about-us-img-1_320.svg");
   }
 
   .card-second {
-    background-image: url('../img/about-us-img-2_320.svg');
+    background-image: url("../img/about-us-img-2_320.svg");
   }
 
   .card__title {
@@ -694,11 +691,13 @@
     line-height: 29px;
   }
 
-  .form__input, .form__textarea {
+  .form__input,
+  .form__textarea {
     padding: 13px 20px;
   }
 
-  .form__input::placeholder, .form__textarea::placeholder {
+  .form__input::placeholder,
+  .form__textarea::placeholder {
     font-size: 14px;
   }
 
