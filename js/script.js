@@ -112,3 +112,9 @@ new Accordion(".accordion", {
   activeClass: "accordion__item_active",
   showMultiple: true,
 });
+
+Modernizr.on("webp", function (result) {
+  if (result) {
+    document.body.classList.add("webp");
+  }
+});
