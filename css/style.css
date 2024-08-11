@@ -488,28 +488,28 @@ body {
   background-position: center;
 }
 
-.hero-swiper__first-slide {
-  background-image: url("../img/hero-bg-1-photo-of-balconies.jpg");
-}
-
 .webp .hero-swiper__first-slide {
   background-image: url("../img/hero-bg-1-photo-of-balconies.webp");
-}
-
-.hero-swiper__second-slide {
-  background-image: url("../img/hero-bg-2-brown-and-blue-glass-building.jpg");
 }
 
 .webp .hero-swiper__second-slide {
   background-image: url("../img/hero-bg-2-brown-and-blue-glass-building.webp");
 }
 
-.hero-swiper__third-slide {
-  background-image: url("../img/hero-bg-3-apartment-apartment-building-architecture-building.jpg");
-}
-
 .webp .hero-swiper__third-slide {
   background-image: url("../img/hero-bg-3-apartment-apartment-building-architecture-building.webp");
+}
+
+.hero-swiper__first-slide {
+  background-image: url("../img/hero-bg-1-photo-of-balconies.jpg");
+}
+
+.hero-swiper__second-slide {
+  background-image: url("../img/hero-bg-2-brown-and-blue-glass-building.jpg");
+}
+
+.hero-swiper__third-slide {
+  background-image: url("../img/hero-bg-3-apartment-apartment-building-architecture-building.jpg");
 }
 
 .swiper-horizontal > .swiper-pagination-bullets,
@@ -561,6 +561,10 @@ body {
   display: flex;
 }
 
+.webp .card-hero {
+  background-image: url("../img/about-us-worker.webp");
+}
+
 .card-hero {
   display: flex;
   align-items: flex-end;
@@ -569,10 +573,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-
-.webp .card-hero {
-  background-image: url("../img/about-us-worker.webp");
 }
 
 .card-hero__wrapper {
@@ -784,36 +784,36 @@ body {
   background-position: center;
 }
 
-.article__right-first::before {
-  background-image: url("../img/how-we-work-1.jpg");
-}
-
 .webp .article__right-first::before {
   background-image: url("../img/how-we-work-1.webp");
-}
-
-.article__right-second::before {
-  background-image: url("../img/how-we-work-2.jpg");
 }
 
 .webp .article__right-second::before {
   background-image: url("../img/how-we-work-2.webp");
 }
 
-.article__right-third::before {
-  background-image: url("../img/how-we-work-3.jpg");
-}
-
 .webp .article__right-third::before {
   background-image: url("../img/how-we-work-3.webp");
 }
 
-.article__right-fourth::before {
-  background-image: url("../img/how-we-work-4.jpg");
-}
-
 .webp .article__right-fourth::before {
   background-image: url("../img/how-we-work-4.webp");
+}
+
+.article__right-first::before {
+  background-image: url("../img/how-we-work-1.jpg");
+}
+
+.article__right-second::before {
+  background-image: url("../img/how-we-work-2.jpg");
+}
+
+.article__right-third::before {
+  background-image: url("../img/how-we-work-3.jpg");
+}
+
+.article__right-fourth::before {
+  background-image: url("../img/how-we-work-4.jpg");
 }
 
 .article__right-active {

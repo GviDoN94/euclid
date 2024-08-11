@@ -169,6 +169,10 @@
     line-height: 24px;
   }
 
+  .webp .hero-swiper__first-slide {
+    background-image: url("../img/hero-bg-1-photo-of-balconies_1024.webp");
+  }
+
   .hero-swiper__first-slide {
     background-image: url("../img/hero-bg-1-photo-of-balconies_1024.jpg");
   }
@@ -218,6 +222,11 @@
 
   .article__descr {
     padding-bottom: 84px;
+  }
+
+  .webp .article__right-first::before {
+    top: 11px;
+    background-image: url("../img/how-we-work-1_1024.webp");
   }
 
   .article__right-first::before {
@@ -308,6 +317,10 @@
     line-height: 22px;
   }
 
+  .webp .hero-swiper__first-slide {
+    background-image: url("../img/hero-bg-1-photo-of-balconies_768.webp");
+  }
+
   .hero-swiper__first-slide {
     background-image: url("../img/hero-bg-1-photo-of-balconies_768.jpg");
   }
@@ -315,6 +328,11 @@
   /* about us */
   .about-us__descr {
     margin-bottom: 59px;
+  }
+
+  .webp .card-hero {
+    min-height: 650px;
+    background-image: url("../img/about-us-worker_768.webp");
   }
 
   .card-hero {
@@ -360,6 +378,10 @@
     width: 100%;
     min-height: 295px;
     margin-bottom: 39px;
+  }
+
+  .webp .article__right-first::before {
+    background-image: url("../img/how-we-work-1_768.webp");
   }
 
   .article__right-first::before {
@@ -496,6 +518,10 @@
     align-self: center;
   }
 
+  .webp .hero-swiper__first-slide {
+    background-image: url("../img/hero-bg-1-photo-of-balconies_320.webp");
+  }
+
   .hero-swiper__first-slide {
     background-image: url("../img/hero-bg-1-photo-of-balconies_320.jpg");
   }
@@ -524,6 +550,10 @@
     margin-bottom: 14px;
     font-size: 14px;
     line-height: 28px;
+  }
+
+  .webp .card-hero {
+    background-image: url("../img/about-us-worker_320.webp");
   }
 
   .card-hero {
@@ -618,8 +648,12 @@
     margin-bottom: 16px;
   }
 
+  .webp .article__right-first::before {
+    background-image: url("../img/how-we-work-1_320.webp");
+  }
+
   .article__right-first::before {
-    background-image: url(../img/how-we-work-1_320.jpg);
+    background-image: url("../img/how-we-work-1_320.jpg");
   }
 
   .article__title {
